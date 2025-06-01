@@ -1,0 +1,99 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+#game-arena {
+    display: none;
+    width: 600px;
+    height: 600px;
+    background-color: #333;
+    position: relative;
+    border: 5px solid #666;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+#game-over-message {
+    display: none;
+    font-size: 24px;
+    color: red;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 60px;
+}
+
+#score-board {
+    font-size: x-large;
+    font-weight: bold;
+    color: black;
+    margin: 10px 0;
+}
+
+#poster-img{
+    width: 600px;
+    height: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.start-button {
+    background-color: orangered;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 4px 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+}
+
+.start-button:hover {
+    background-color: darkorange;
+}
+
+.restart-button {
+    background-color: orangered;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 4px 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+}
+
+.food {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    border-radius: 50%;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.snake {
+    width: 20px;
+    height: 20px;
+    background-color: chartreuse;
+    position: absolute;
+    border-radius: 5px;
+}
